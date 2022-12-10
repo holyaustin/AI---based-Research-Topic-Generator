@@ -138,6 +138,21 @@ textarea {
     width: 100%;
 }
 
+.prompt-buttons2 {
+    display: flex;
+    place-content: center;
+    align-items: center;
+    //justify-content: flex-end;
+    flex: 0 0 auto;
+    flex-flow: row nowrap;
+    gap: 2px;
+    height: min-content;
+    overflow: hidden;
+    padding: 0px;
+    position: relative;
+    width: 100%;
+}
+
 .key-stroke {
     outline: none;
     display: flex;
@@ -169,6 +184,7 @@ textarea {
     color: rgba(255, 255, 255, 0.25)
 }
 
+
 .generate-button {
     place-content: flex-start;
     align-items: flex-start;
@@ -186,6 +202,26 @@ textarea {
     width: min-content;
     will-change: transform;
     cursor: pointer;
+}
+
+.generate-button2 {
+    place-content: flex-start;
+    align-items: center;
+    background-color: rgb(255, 79, 18);
+    border-radius: 100px;
+    display: flex;
+    flex: 0 0 auto;
+    flex-flow: column nowrap;
+    gap: 10px;
+    height: min-content;
+    overflow: hidden;
+    padding: 16px 24px;
+    position: relative;
+    text-decoration: none;
+    width: 70%;
+    will-change: transform;
+    cursor: pointer;
+    text-align: center;
 }
 
 .generate {
@@ -321,9 +357,13 @@ textarea {
 }
 
 .output-content p {
-    text-align: center;
+    text-align: justify;
+
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
     white-space: pre-line;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.8);
 }
 
 @media (min-width: 810px) and (max-width: 1199px) {

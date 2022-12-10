@@ -5,8 +5,8 @@ import Link from 'next/link';
 import { useRouter } from 'next/router'
 import buildspaceLogo from '../assets/buildspace-logo.png';
 
-const Home = () => {
-  const navigate = useRouter();
+const Abstract = () => {
+    const navigate = useRouter();
   const [userInput, setUserInput] = useState('');
   const [apiOutput, setApiOutput] = useState('')
 const [isGenerating, setIsGenerating] = useState(false)
@@ -15,7 +15,7 @@ const callGenerateEndpoint = async () => {
   setIsGenerating(true);
   
   console.log("Calling OpenAI...");
-  const response = await fetch('/api/generate', {
+  const response = await fetch('/api/generate2', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -31,11 +31,11 @@ const callGenerateEndpoint = async () => {
   setIsGenerating(false);
 }
 
-const getAbstract = async () => {
-  console.log("Calling Abstract...");
-
-navigate.push('/abstract');
-}
+const getBack = async () => {
+    console.log("Calling GetBack...");
+  
+  navigate.push('/');
+  }
 
   const onUserChangedText = (event) => {
     console.log(event.target.value);
@@ -49,7 +49,7 @@ navigate.push('/abstract');
             <h1>AI - based Project / Research Topic Generator</h1>
           </div>
           <div className="header-subtitle">
-            <h2>Get your computer science based research topic</h2>
+            <h2>Get Abstract of a research topic</h2>
           </div>
         </div>
         {/* Add this code here*/}
@@ -77,7 +77,7 @@ navigate.push('/abstract');
   <div className="output">
     <div className="output-header-container">
       <div className="output-header">
-        <h3>List of Topics</h3>
+        <h3>Abstract</h3>
       </div>
     </div>
 
@@ -87,10 +87,10 @@ navigate.push('/abstract');
       <div className="prompt-buttons2">
   <a
     className="generate-button2"
-    onClick={getAbstract}
+    onClick={getBack}
   >
     <div className="generate">
-   <p>Get Abstract of any of the topics above</p>
+   <p>Get Back to Home Page</p>
     </div>
   </a>
 </div>
@@ -128,4 +128,4 @@ navigate.push('/abstract');
   );
 };
 
-export default Home;
+export default Abstract;
