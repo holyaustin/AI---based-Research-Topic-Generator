@@ -1,6 +1,6 @@
 # AI CSC Project / Research Topics
 ### Welcome 👋
-This is Artificial Intelligence powered computer science Project / Research  [build your own AI writing assistant w/ GPT-3](https://Research-Topics.vercel.com) project.
+This is Artificial Intelligence powered computer science Project / Research  [Generate your own AI reaserch topic suggestions w/ GPT-3](https://research-topic-generator.vercel.app/) project.
 
 
 ### How to use 👋

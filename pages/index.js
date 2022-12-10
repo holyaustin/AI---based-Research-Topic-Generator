@@ -120,7 +120,7 @@ navigate.push('/abstract');
         >
           <div className="badge">
             <Image src={buildspaceLogo} alt="buildspace logo" />
-            <p>build with buildspace</p>
+            <p>build with buildspace by (holyaustin devs) @holyaustin. Allright Reserved (c) 2022</p>
           </div>
         </a>
       </div>
