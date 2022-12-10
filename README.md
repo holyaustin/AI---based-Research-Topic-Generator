@@ -1,10 +1,20 @@
-# buildspace 
+# AI CSC Project / Research Topics
 ### Welcome 👋
-This is the starter template for the [build your own AI writing assistant w/ GPT-3](https://buildspace.so/builds/ai-writer) project.
+This is Artificial Intelligence powered computer science Project / Research  [build your own AI writing assistant w/ GPT-3](https://Research-Topics.vercel.com) project.
 
 
-OPENAI_API_KEY=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
+### How to use 👋
 
-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
+Enter a computer science area into the TextArea and click the button below it. it will generate about 10 (ten) topics for you. 
+
+Try it today. 
+
+Thanks
+
+
+@holyaustin
+
+
+
 
 
